@@ -77,3 +77,6 @@ def submit_data():
     phone_entry.delete(0, tk.END)
     address_entry.delete(0, tk.END)
     contact_method.set("Email")
+
+    # --- Submit Button ---
+tk.Button(root, text="Submit", command=submit_data).grid(row=6, column=0, columnspan=2, pady=10)
