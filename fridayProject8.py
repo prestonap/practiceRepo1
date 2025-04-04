@@ -58,3 +58,10 @@ def submit_data():
     phone = phone_entry.get()
     address = address_entry.get()
     contact = contact_method.get()
+
+     # Save to database
+    cursor.execute('''
+        INSERT INTO customers (name, birthday, email, phone, address, contact_method)
+        VALUES (?, ?, ?, ?, ?, ?)
+    ''', (name, birthday, email, phone, address, contact))
+    conn.commit()
