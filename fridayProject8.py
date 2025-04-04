@@ -65,3 +65,7 @@ def submit_data():
         VALUES (?, ?, ?, ?, ?, ?)
     ''', (name, birthday, email, phone, address, contact))
     conn.commit()
+
+
+    # Show success message
+    messagebox.showinfo("Success", "Customer info submitted!")
