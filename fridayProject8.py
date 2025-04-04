@@ -17,3 +17,9 @@ CREATE TABLE IF NOT EXISTS customers (
     contact_method TEXT
 )
 ''')
+
+conn.commit()
+
+# --- Step 2: Create the GUI using Tkinter ---
+root = tk.Tk()
+root.title("Customer Info Form")
