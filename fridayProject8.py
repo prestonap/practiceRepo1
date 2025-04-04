@@ -48,3 +48,13 @@ address_entry.grid(row=4, column=1)
 tk.Label(root, text="Preferred Contact Method").grid(row=5, column=0)
 contact_method = tk.StringVar(value="Email")
 tk.OptionMenu(root, contact_method, "Email", "Phone", "Text").grid(row=5, column=1)
+
+# --- Submit button function ---
+def submit_data():
+    # Get values from form
+    name = name_entry.get()
+    birthday = birthday_entry.get()
+    email = email_entry.get()
+    phone = phone_entry.get()
+    address = address_entry.get()
+    contact = contact_method.get()
