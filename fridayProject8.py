@@ -69,3 +69,11 @@ def submit_data():
 
     # Show success message
     messagebox.showinfo("Success", "Customer info submitted!")
+
+# Clear form fields
+    name_entry.delete(0, tk.END)
+    birthday_entry.delete(0, tk.END)
+    email_entry.delete(0, tk.END)
+    phone_entry.delete(0, tk.END)
+    address_entry.delete(0, tk.END)
+    contact_method.set("Email")
