@@ -80,3 +80,8 @@ def submit_data():
 
     # --- Submit Button ---
 tk.Button(root, text="Submit", command=submit_data).grid(row=6, column=0, columnspan=2, pady=10)
+
+root.mainloop()
+
+# Close the database when GUI is closed
+conn.close()
